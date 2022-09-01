@@ -1,0 +1,125 @@
+Population_Label,N,Array,lat,lng,N_log,Population_Location,Region_Category,Ratio_pop_euro_0.05-0.5MAF,Ratio_pop_euro_0.01-0.05MAF,color
+Gambia_MalariaGEN_IlluminaOmni2.5M,5172,Omni2.5,13.44,14.375,8.551,Gambia,Africa,0.998,1.007,green
+NH_Sun2021_MEGA,4150,MEGA,21.31,-157.858,8.331,Honolulu HI USA,Polynesia,0.994,0.995,green
+Kenya_MalariaGEN_IlluminaOmni2.5M,3467,Omni2.5,0.02,37.91,8.151,Kenya,Africa,0.995,1.002,green
+Malawi_MalariaGEN_IlluminaOmni2.5M,2499,Omni2.5,13.25,34.3,7.824,Malawi,Africa,0.997,1.004,green
+Pakistani_RACE_Illumina660W,2493,Illumina 660W,30.375,69.345,7.821,Pakistan,South_and_Central_Asia,0.969,0.891,green
+Thai_HAPO_IlluminaOmni1,2435,Omni1,13.756,100.502,7.798,Bangkok Thailand,Southeast_Asia,0.979,0.901,green
+Afro-Caribbean_HAPO_IlluminaHuman1MDuo,2273,Illumina 1M,13.194,-59.543,7.729,Barbados,America,0.999,1.012,green
+Filipino_dbGaP_Affx5.0,1799,Affy 5.0,12.88,121.774,7.495,Philippines,Southeast_Asia,0.953,0.855,green
+BurkinaFaso_MalariaGEN_IlluminaOmni2.5M,1329,Omni2.5,12.24,1.56,7.192,Burkina Faso,Africa,0.998,1.007,green
+Cameroon_MalariaGEN_IlluminaOmni2.5M,1277,Omni2.5,7.37,12.35,7.152,Cameroon,Africa,0.999,1.007,green
+Vietnam_MalariaGEN_IlluminaOmni2.5M,1264,Omni2.5,14.06,108.28,7.142,Vietnam,Southeast_Asia,0.987,0.915,green
+Mexican_Diabetes2017_OMNI,1147,Omni2.5,23.635,-102.553,7.045,Mexico,America,1.001,1.014,green
+Saudi-Arabia_Mineta2021_Affx,1073,Axiom CEU,23.795,46.679,6.978,Saudia Arabia,Middle_East_and_Caucasus,0.969,0.922,green
+Tanzania_MalariaGEN_IlluminaOmni2.5M,819,Omni2.5,6.37,34.89,6.708,Tanzania,Africa,0.993,0.996,green
+PNG_MalariaGEN_IlluminaOmni2.5M,776,Omni2.5,6.32,143.96,6.654,Papua New Guinea,Oceania,0.964,0.679,green
+Ghana_MalariaGEN_IlluminaOmni2.5M,735,Omni2.5,7.95,1.02,6.6,Ghana,Africa,0.998,1.008,green
+Vanuatu_Parks2017_HC24,610,Infinium HumanCore,-15.377,166.959,6.413,Vanuatu,Oceania,0.857,0.57,red
+Mali_MalariaGEN_IlluminaOmni2.5M,487,Omni2.5,17.57,3.99,6.188,Mali,Africa,0.997,1.006,green
+Tibetan-Nepali_Jeong2018_OEHC,344,OmniExpress,28.647,84.352,5.841,Nepal,South_and_Central_Asia,0.97,0.841,green
+PERU_PAGE_MEGA,302,MEGA,-9.19,-75.015,5.71,PERU,America,0.984,0.898,green
+East-Asia_Li2008_Illumina650Y,241,Hap650Y,36.411,111.659,5.485,"Cambodia, China, Japan, Siberia",East_Asia,0.976,0.875,green
+Southeast-Indonesia_Hudjashov2017_Affx,235,Human Origins Array,-7.854,121.589,5.46,"Alor, Flores Bama, Flores Bena, Flores Rampasasa, Lembata, Pantar, Sumba, Timor",Southeast_Asia,0.936,0.755,yellow
+Central-South-Asia_Li2008_Illumina650Y,210,Hap650Y,37.084,78.486,5.347,"Xinjiang, China",South_and_Central_Asia,0.977,0.916,green
+ThaiLaoTai-Kadai_Kutanan2021_HO,201,Human Origins Array,16.701,101.056,5.303,Thailand and Laos,Southeast_Asia,0.941,0.778,yellow
+PAKISTAN_PAGE_MEGA,192,MEGA,30.375,69.345,5.257,PAKISTAN,South_and_Central_Asia,0.978,0.945,green
+NH-Polynesians_Sun2021_MEGA,178,MEGA,21.31,-157.858,5.182,Honolulu HI USA,Polynesia,0.995,0.965,green
+Vanuatu_Lipson2018a_HO,176,Human Origins Array,-15.377,166.959,5.17,Vanuatu,Oceania,0.883,0.584,red
+CHINA_PAGE_MEGA,168,MEGA,35.862,104.195,5.124,CHINA,East_Asia,0.972,0.871,green
+RapaNui_Ioannidis2020_AxiomLAT-1,166,Axiom LAT,-27.113,-109.35,5.112,Rapa Nui Island,Polynesia,0.994,0.995,green
+Europe_Li2008_Illumina650Y,161,Hap650Y,44.346,17.365,5.081,"France, Italy, Orkney Islands, Russian Caucasus",Europe,0.994,0.972,green
+SEAsia-Insular_Morseburg2016_HOE720K,158,OmniExpress,5.209,113.1,5.063,"Brunei, Philippines, Malaysia, Indonesia",Southeast_Asia,0.959,0.839,green
+New-Britain_Lipson2018a_HO,152,Human Origins Array,-5.138,151.374,5.024,Papua New Guinea,Oceania,0.884,0.569,red
+nonRapaNui_Ioannidis2020_AxiomLAT-1,150,Axiom LAT,-17.68,-149.407,5.011,French Polynesia,Polynesia,0.985,0.958,green
+Middle-East_Li2008_Illumina650Y,148,Hap650Y,31.803,34.944,4.997,Israel,Middle_East_and_Caucasus,0.983,0.966,green
+Siberian_Cardona2014_HOE720K,142,OmniExpress,61.014,99.197,4.956,Siberia,Siberia,0.965,0.868,green
+Nigeria_MalariaGEN_IlluminaOmni2.5M,135,Omni2.5,9.08,8.67,4.905,Nigeria,Africa,0.998,1.006,green
+ThaiLaoAustroasiatic_Kutanan2021_HO,134,Human Origins Array,17.245,100.348,4.898,Thailand,Southeast_Asia,0.913,0.707,yellow
+MEXICO_PAGE_MEGA,134,MEGA,23.635,-102.553,4.898,MEXICO,America,0.992,0.996,green
+Subsaharan-Africa_Li2008_Illumina650Y,127,Hap650Y,-3.913,16.608,4.844,"South Africa, Central African Republic, Senegal, Democratic Republic of Congo, Namibia, Nigeria, Kenya",Africa,0.957,0.939,green
+Tibetan-and-Nepal_Wang2021_HO,115,Human Origins Array,30.985,95.323,4.745,Nepala amd Tibet,East_Asia,0.941,0.743,yellow
+America_Li2008_Illumina650Y,108,Hap650Y,4.657,-76.258,4.682,"Columbia, Brazil, Mexico",America,0.987,0.891,green
+French-Polynesia_Parks2017_HC24,83,Infinium HumanCore,-17.68,-149.407,4.419,French Polynesia,Polynesia,0.985,0.953,green
+Fiji_Parks2017_HC24,80,Infinium HumanCore,-17.713,178.065,4.382,Fiji,Oceania,0.872,0.6,red
+TaiKadai-Vietnam_Liu2020_HO,72,Human Origins Array,20.967,105.122,4.277,Vietnam,Southeast_Asia,0.945,0.761,yellow
+SinoTibetan-Vietnam_Liu2020_HO,72,Human Origins Array,22.733,104.067,4.277,Vietnam,Southeast_Asia,0.939,0.734,yellow
+VENEZUELA_PAGE_MEGA,70,MEGA,6.424,-66.59,4.248,VENEZUELA,America,0.982,0.621,green
+Yoruba_Lazaridis2016_HO,70,Human Origins Array,7.4,3.9,4.248,Nigeria,Africa,0.989,1.011,green
+Madagascar_Pierron2013_HOE720K,69,OmniExpress,-18.767,46.869,4.234,Madagascar,Africa,0.992,1.006,green
+Other-Ethnics-Southern-China_Wang2021_HO,64,Human Origins Array,25.7,107.66,4.159,"Huanjiang, Longlin, Guizhou, Luocheng, Hunan",East_Asia,0.948,0.771,yellow
+Han-China_Wang2021_HO,64,Human Origins Array,31.155,114.618,4.159,"Fujian, Guangdong, Henan, Hubei, Jiangsu, Shandong, Shanghai, Shanxi, Sichuan, Zhejiang, Chongqing",East_Asia,0.949,0.766,yellow
+French_Lazaridis2016_HO,61,Human Origins Array,48.558,1.403,4.111,France,Europe,0.991,0.96,green
+Aymara_Ioannidis2020_MEGA-AxiomLAT-1,61,Axiom LAT,-15.84,-70.022,4.111,Puno_Peru,America,0.975,0.778,green
+NESiberian_Cardona2014_HOE720K,58,OmniExpress,66.161,-169.822,4.06,"Uelen, Russia",Siberia,0.958,0.745,green
+ThaiLaoSino-Tibetan_Kutanan2021_HO,57,Human Origins Array,19.247,98.147,4.043,Thailand,Southeast_Asia,0.93,0.703,yellow
+Turkish_Lazaridis2016_HO,56,Human Origins Array,41.0,39.7,4.025,Turkey,Middle_East_and_Caucasus,0.965,0.87,green
+Samoa_Parks2017_HC24,53,Infinium HumanCore,-13.759,-172.105,3.97,Samoa,Polynesia,0.956,0.773,green
+Spanish_Lazaridis2016_HO,53,Human Origins Array,39.5,-0.4,3.97,Spain,Europe,0.991,0.968,green
+New-Ireland_Lipson2018a_HO,52,Human Origins Array,-2.961,151.484,3.951,Papua New Guinea,Oceania,0.888,0.569,red
+FRANCE_PAGE_MEGA,51,MEGA,46.228,2.214,3.932,FRANCE,Europe,0.999,0.995,green
+Cook-Islands_Parks2017_HC24,48,Infinium HumanCore,-21.237,-159.778,3.871,Cook Islands,Polynesia,0.985,0.929,green
+SOUTHAFRICA_PAGE_MEGA,47,MEGA,-30.559,22.938,3.85,South Africa,Africa,0.841,0.76,red
+AustroAsiatic-Vietnam_Liu2020_HO,46,Human Origins Array,21.167,105.178,3.829,Vietnam,Southeast_Asia,0.938,0.783,yellow
+ISRAEL-NEGEV_PAGE_MEGA,46,MEGA,30.714,34.876,3.829,Negev Israel,Middle_East_and_Caucasus,0.98,0.982,green
+ISRAEL-CENTRAL_PAGE_MEGA,46,MEGA,31.952,34.907,3.829,Central Israel,Middle_East_and_Caucasus,0.979,0.981,green
+BRAZIL_PAGE_MEGA,45,MEGA,-14.235,-51.925,3.807,BRAZIL,America,0.974,0.435,green
+ITALY_PAGE_MEGA,44,MEGA,43.785,11.122,3.784,Italy,Europe,0.987,0.983,green
+Han_Lazaridis2016_HO,43,Human Origins Array,32.3,114.0,3.761,China,East_Asia,0.949,0.858,yellow
+ISRAEL-CARMEL_PAGE_MEGA,42,MEGA,32.743,35.048,3.738,Carmel Israel,Middle_East_and_Caucasus,0.979,0.971,green
+RUSSIA_PAGE_MEGA,41,MEGA,49.671,41.309,3.714,Russia,Europe,0.99,0.986,green
+Northern-China_Wang2021_HO,41,Human Origins Array,36.5,102.025,3.714,"Jishishan, Sunan, Xunhua, Linxia",East_Asia,0.946,0.864,yellow
+Southern-Indonesia_Hudjashov2017_Affx,40,Human Origins Array,-8.012,112.951,3.689,Java and Bali,Southeast_Asia,0.946,0.841,yellow
+Oceania_Li2008_Illumina650Y,39,Hap650Y,-5.694,148.364,3.664,Bougainville and New Guinea,Oceania,0.917,0.585,yellow
+Druze_Lazaridis2016_HO,39,Human Origins Array,32.0,35.0,3.664,Israel(Carmel),Middle_East_and_Caucasus,0.959,0.896,green
+Palestinian_Lazaridis2016_HO,38,Human Origins Array,32.0,35.0,3.638,Israel(Central),Middle_East_and_Caucasus,0.959,0.929,green
+Iranian_Lazaridis2016_HO,38,Human Origins Array,33.796,51.274,3.638,Iran,Middle_East_and_Caucasus,0.953,0.883,green
+Hmong-Vietnam_Liu2020_HO,36,Human Origins Array,22.167,104.133,3.584,Vietnam,Southeast_Asia,0.945,0.769,yellow
+Austronesian-Vietnam_Liu2020_HO,33,Human Origins Array,13.2,108.262,3.497,Vietnam,Southeast_Asia,0.932,0.785,yellow
+Tonga_Parks2017_HC24,32,Infinium HumanCore,-21.179,-175.198,3.466,Tonga,Polynesia,0.956,0.85,green
+Ethnic-Minorities-in-Nepal_Wang2021_HO,32,Human Origins Array,27.4,85.75,3.466,Nepal,South_and_Central_Asia,0.937,0.817,yellow
+New-Caledonia_Parks2017_HC24,31,Infinium HumanCore,-20.904,165.618,3.434,New Caledonia,Oceania,0.878,0.728,red
+Leeward-Society-Isles_Hudjashov2018_HOE720K,30,OmniExpress,-16.761,-151.444,3.401,Leeward Islands,Polynesia,,,green
+Bougainville_Lipson2018a_HO,30,Human Origins Array,-5.758,154.915,3.401,Papua New Guinea,Oceania,0.893,0.587,red
+Sumatra_Hudjashov2017_Affx,30,Human Origins Array,-0.59,101.343,3.401,"Sumatra,Indonesia",Southeast_Asia,0.949,0.829,yellow
+North-Africa_Li2008_Illumina650Y,30,Hap650Y,28.034,1.66,3.401,Algeria_(Mzab),Africa,0.992,0.996,green
+ALGERIA-MZAB_PAGE_MEGA,29,MEGA,28.034,1.66,3.367,ALGERIA-MZAB,Africa,0.994,0.997,green
+Japanese_Lazaridis2016_HO,29,Human Origins Array,38.0,138.0,3.367,Japan,East_Asia,0.952,0.788,green
+JAPAN_PAGE_MEGA,29,MEGA,36.205,138.253,3.367,JAPAN,East_Asia,0.972,0.866,green
+Basque_Lazaridis2016_HO,29,Human Origins Array,43.1,-2.1,3.367,Spain,Europe,1.002,0.998,green
+Nias-Indonesia_Hudjashov2017_Affx,28,Human Origins Array,1.126,97.525,3.332,"Nias,Indonesia",Southeast_Asia,0.956,0.73,green
+Sardinian_Lazaridis2016_HO,27,Human Origins Array,40.0,9.0,3.296,Italy(Sardinia),Europe,0.968,0.885,green
+Mentawai-Indonesia_Hudjashov2017_Affx,26,Human Origins Array,-1.426,98.925,3.258,"Mentawai,Indonesia",Southeast_Asia,0.954,0.637,green
+SIBERIA_PAGE_MEGA,25,MEGA,61.014,99.197,3.219,SIBERIA,Siberia,0.974,0.896,green
+ThaiLaoHmong-Mien_Kutanan2021_HO,25,Human Origins Array,19.112,99.832,3.219,Thailand,Southeast_Asia,0.94,0.703,yellow
+Polynesian_Hudjashov2017_Affx,25,Human Origins Array,-17.53,-165.576,3.219,Western Samoa,Polynesia,0.928,0.647,yellow
+Polynesian_Hudjashov2017_Affx,25,Human Origins Array,-17.53,-165.576,3.219,Tahiti,Polynesia,0.928,0.647,yellow
+Polynesian_Hudjashov2017_Affx,25,Human Origins Array,-17.53,-165.576,3.219,Tonga,Polynesia,0.928,0.647,yellow
+BedouinA_Lazaridis2016_HO,25,Human Origins Array,31.0,35.0,3.219,Israel(Negev),Middle_East_and_Caucasus,0.957,0.911,green
+Ulchi_Lazaridis2016_HO,25,Human Origins Array,52.2,140.4,3.219,Russia,Siberia,0.932,0.653,yellow
+PNG_Hudjashov2017_Affx,24,Human Origins Array,-6.315,143.956,3.178,PapuaNewGuinea,Oceania,0.869,0.54,red
+Chukchi_Lazaridis2016_HO,23,Human Origins Array,64.4,173.9,3.135,Russia,Siberia,0.926,0.521,yellow
+CENTRALAFRICANREPUBLIC_PAGE_MEGA,23,MEGA,6.611,20.939,3.135,Central African Republic,Africa,0.968,0.974,green
+Burusho_Lazaridis2016_HO,23,Human Origins Array,36.5,74.0,3.135,Pakistan,South_and_Central_Asia,0.943,0.779,yellow
+Tubalar_Lazaridis2016_HO,22,Human Origins Array,51.1,87.0,3.091,Russia,Siberia,0.953,0.757,green
+Zhuang-China_Wang2021_HO,22,Human Origins Array,22.8,108.4,3.091,"Guangxi, China",East_Asia,0.941,0.734,yellow
+Eskimo_Lazaridis2016_HO,22,Human Origins Array,64.4,173.9,3.091,Russia,Siberia,0.928,0.504,yellow
+Russian_Lazaridis2016_HO,22,Human Origins Array,61.0,40.0,3.091,Russia,Europe,0.991,0.975,green
+Taiwan_Ioannidis2020_AxiomLAT-1,22,Axiom LAT,23.698,120.961,3.091,Taiwan,East_Asia,0.937,0.717,yellow
+NIGERIA_PAGE_MEGA,22,MEGA,9.082,8.675,3.091,NIGERIA,Africa,0.999,1.002,green
+SENEGAL_PAGE_MEGA,22,MEGA,14.497,-14.452,3.091,SENEGAL,Africa,0.993,0.999,green
+Baining-NewBritain_Hudjashov2017_Affx,21,Human Origins Array,-5.747,150.768,3.045,New Britain Islands,Oceania,0.819,0.353,red
+CentralAsian_Wang2021_HO,21,Human Origins Array,41.15,91.0,3.045,Kazak Autonomous County and Urumqi,South_and_Central_Asia,0.952,0.836,green
+Brahui_Lazaridis2016_HO,21,Human Origins Array,30.5,66.5,3.045,Pakistan,South_and_Central_Asia,0.946,0.826,yellow
+Mozabite_Lazaridis2016_HO,21,Human Origins Array,32.0,3.0,3.045,Algeria,Middle_East_and_Caucasus,0.982,0.985,green
+Hungarian_Lazaridis2016_HO,20,Human Origins Array,47.5,19.1,2.996,Hungary,Europe,0.99,0.977,green
+Thailand_Lipson2018b_HO,20,Human Origins Array,15.87,100.993,2.996,Thailand,Southeast_Asia,0.904,0.451,yellow
+Magdalena_Ioannidis2020_MEGA,20,MEGA,-7.877,-79.294,2.996,Magdalena de Cao Peru,America,0.943,0.902,yellow
+Qiang_Wang2021_HO,20,Human Origins Array,30.85,101.5,2.996,Daofu and Danba County,East_Asia,0.931,0.656,yellow
+Yakut_Lazaridis2016_HO,20,Human Origins Array,61.524,105.319,2.996,Russia,Siberia,0.944,0.727,yellow
+Biaka_Lazaridis2016_HO,20,Human Origins Array,4.0,17.0,2.996,CentralAfricanRepublic,Africa,0.947,0.922,yellow
+Makrani_Lazaridis2016_HO,20,Human Origins Array,26.0,64.0,2.996,Pakistan,South_and_Central_Asia,0.949,0.875,yellow
+Balochi_Lazaridis2016_HO,20,Human Origins Array,30.5,66.5,2.996,Pakistan,South_and_Central_Asia,0.947,0.818,yellow
+Greek_Lazaridis2016_HO,20,Human Origins Array,38.0,23.7,2.996,Greece,Europe,0.977,0.939,green
+SEAsia-Mainland_Morseburg2016_HOE720K,20,OmniExpress,21.916,95.956,2.996,Myanmar,Southeast_Asia,,,green
+Sulawesi_Hudjashov2017_Affx,20,Human Origins Array,-1.848,120.528,2.996,"Sulawesi,Indonesia",Southeast_Asia,0.95,0.748,green
