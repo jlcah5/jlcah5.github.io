@@ -23,18 +23,7 @@
     </head>
     <body>
         <div id="window"></div>
-        <script>
-            /*
-            clean map:
-            add hovering labels
-            enforce scroll limit
-
-            finish:
-            mount onto webserver + host it on my github page
-            could be cool to put it on a qr code 
-
-            */
-           
+        <script>           
             var l= L.map('window').setView([0, 0], 3);
             l.setMaxBounds(l.getBounds());
             l.options.minZoom = 2;
