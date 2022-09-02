@@ -59,8 +59,9 @@
                                 "<b>SIZE: </b>"+row.N+'<br>'+
                                 "<b>LATITUDE: </b>"+row.lat+'<br>'+
                                 "<b>LONGITUDE: </b>"+row.lng+'<br>'+
-                                "<b>ARRAY: </b>"+row.Array+'<br>'
-                                ).bindTooltip(row.Population_Label).openTooltip();;
+                                "<b>ARRAY: </b>"+row.Array+'<br>'+
+                                "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005MAF+'<br>'
+                                ).bindTooltip(row.Population_Label).openTooltip();
                     marker.addTo(l);
                     }
 
@@ -78,7 +79,7 @@
 
             var popup = L.popup()
                 .setLatLng([0, 0])
-                .setContent('Welcome to the Imputation Around the World Project. Clik on any marker to learn more about the population!')
+                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population!')
                 .openOn(l);
         
         

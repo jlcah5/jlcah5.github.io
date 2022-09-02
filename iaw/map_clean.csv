@@ -1,4 +1,4 @@
-Population_Label,N,Array,lat,lng,N_log,Population_Location,Region_Category,Ratio_pop_euro_0.05-0.5MAF,Ratio_pop_euro_0.01-0.05MAF,color
+Population_Label,N,Array,lat,lng,N_log,Population_Location,Region_Category,Ratio005MAF,Ratio01MAF,color
 Gambia_MalariaGEN_IlluminaOmni2.5M,5172,Omni2.5,13.44,14.375,8.551,Gambia,Africa,0.998,1.007,green
 NH_Sun2021_MEGA,4150,MEGA,21.31,-157.858,8.331,Honolulu HI USA,Polynesia,0.994,0.995,green
 Kenya_MalariaGEN_IlluminaOmni2.5M,3467,Omni2.5,0.02,37.91,8.151,Kenya,Africa,0.995,1.002,green
