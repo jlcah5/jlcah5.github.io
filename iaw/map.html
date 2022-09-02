@@ -21,6 +21,9 @@
                 position: relative;
                 z-index: 1;
             }
+            #button:hover{
+                text-shadow: 0px 0px 5px yellow;
+            }
             #button{
                 color:white;
                 font-size: 2em;
@@ -32,8 +35,8 @@
                 padding:0;
                 position: absolute;
                 z-index: 10;
-                right:96%;
-                top: 89%
+                left:2em;
+                bottom:2em;
             }
             body{
                 padding:0;
@@ -57,17 +60,18 @@
                 attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             }).addTo(l);
 
-            $.get('./map_clean.csv', function(csvString) {
+            $.get('map_clean.csv', function(csvString) {
 
             // Use PapaParse to convert string to array of objects
                 var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
-
+                console.log(data[0])
                 // For each row in data, create a marker and add it to the map
                 // For each row, columns `Latitude`, `Longitude`, and `Title` are required
                 for (var i in data) {
                     
                     var row = data[i];
-                    console.log(row.Population_Label)
+                    console.log(row.Population_Label);
+                    console.log(row.Ratio005MAF);
 
                     var marker = L.circle([row.lat, row.lng], {
                         color:"white",
