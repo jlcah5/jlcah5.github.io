@@ -7,8 +7,9 @@
         <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script src="https://kit.fontawesome.com/682349c1eb.js" crossorigin="anonymous"></script>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
         <style>
@@ -17,11 +18,32 @@
                 height: 100%;
                 margin:0;
                 padding:0;
+                position: relative;
+                z-index: 1;
             }
+            #button{
+                color:white;
+                font-size: 2em;
+                cursor:pointer;
+            } 
+            
+            .container{
+                margin:0;
+                padding:0;
+                position: absolute;
+                z-index: 10;
+                right:96%;
+                top: 89%
+            }
+            body{
+                padding:0;
+            }
+
         </style>
 
     </head>
     <body>
+        <div class="container"><i class="fa-solid fa-compass" id="button"></i></div>
         <div id="window"></div>
         <script>           
             var l= L.map('window').setView([0, 0], 3);
@@ -50,8 +72,8 @@
                     var marker = L.circle([row.lat, row.lng], {
                         color:"white",
                         fillColor: row.color,
-                        weight:0.5,
-                        fillOpacity: 0.1,
+                        weight:0.8,
+                        fillOpacity: 0.5,
                         radius: 50000*row.N_log,
                     }).bindPopup("<b>LABEL: </b>"+row.Population_Label+'<br>'+
                                 "<b>LOCATION: </b>"+row.Population_Location+'<br>'+
@@ -61,28 +83,27 @@
                                 "<b>LONGITUDE: </b>"+row.lng+'<br>'+
                                 "<b>ARRAY: </b>"+row.Array+'<br>'+
                                 "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005MAF+'<br>'
-                                ).bindTooltip(row.Population_Label).openTooltip();
+                                ).bindTooltip(row.Population_Label);
                     marker.addTo(l);
                     }
 
             });
            
 
-        
-            
-            // var circle = L.circle([data[0].lat, data[0].lng], {
-            //     color: 'red',
-            //     fillColor: '#f03',
-            //     fillOpacity: 0.5,
-            //     radius: 500*data[0].N_log
-            // }).addTo(map).bindPopup('TESTING');
-
             var popup = L.popup()
                 .setLatLng([0, 0])
-                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population!')
+                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Pink: > 10% loss in quality </li> </ul>')
                 .openOn(l);
         
-        
+            let btn = document.querySelector('#button');
+            btn.addEventListener('mouse', (event) =>{
+                document.body.style.cursor = `pointer`;
+            });
+
+            btn.addEventListener('click',(event) => {
+                console.log("click")
+                popup.openOn(l);
+            });
         </script>
        
 
