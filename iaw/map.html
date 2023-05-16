@@ -64,14 +64,13 @@
 
             // Use PapaParse to convert string to array of objects
                 var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
-                console.log(data[126])
+                console.log(data[125])
                 // For each row in data, create a marker and add it to the map
                 // For each row, columns `Latitude`, `Longitude`, and `Title` are required
                 for (var i in data) {
                     
                     var row = data[i];
                     console.log(row.Population_Label);
-                    console.log(row.Ratio005MAF);
 
                     var marker = L.circle([row.lat, row.lng], {
                         color:"white",
@@ -86,7 +85,8 @@
                                 "<b>LATITUDE: </b>"+row.lat+'<br>'+
                                 "<b>LONGITUDE: </b>"+row.lng+'<br>'+
                                 "<b>ARRAY: </b>"+row.Array+'<br>'+
-                                "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005MAF+'<br>'
+                                "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
+                                "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005+'<br>'
                                 ).bindTooltip(row.Population_Label);
                     marker.addTo(l);
                     }
@@ -96,7 +96,7 @@
 
             var popup = L.popup()
                 .setLatLng([0, 0])
-                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Pink: > 10% loss in quality </li> </ul>')
+                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! Based on 5-50% alleles: <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Pink: > 10% loss in quality </li> </ul>')
                 .openOn(l);
         
             let btn = document.querySelector('#button');

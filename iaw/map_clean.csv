@@ -1,4 +1,4 @@
-Population_Label,N,Array,lat,lng,Folder_Location,N_log,Population_Location,Region_Category,Ratio_pop_euro_0.05-0.5MAF,Pop_mean_x,Euro_mean_x,Ratio_pop_euro_0.01-0.05MAF,Pop_mean_y,Euro_mean_y,Count,color
+Population_Label,N,Array,lat,lng,Folder_Location,N_log,Population_Location,Region_Category,Ratio005,Pop_mean_x,Euro_mean_x,Ratio001,Pop_mean_y,Euro_mean_y,Count,color
 Gambia_MalariaGEN_IlluminaOmni2.5M,5172,Omni2.5,13.44,14.375,/project/minhuic_62/Imputation_results/Gambia_MalariaGEN_IlluminaOmni2.5M/,8.551,Gambia,Africa,0.999,0.9755,0.9766,1.032,0.9607,0.9313,1235364.0,#1F51FF
 NH_Sun2021_MEGA,4150,MEGA,21.31,-157.858,/project/chia657_28/datasets/private/MEC/All_MEGA_GWAS/NH/,8.331,Honolulu HI USA,Polynesia,0.991,0.9655,0.9742,0.962,0.8905,0.9255,723007.0,#1F51FF
 Kenya_MalariaGEN_IlluminaOmni2.5M,3467,Omni2.5,0.02,37.91,/project/minhuic_62/Imputation_results/Kenya_MalariaGEN_IlluminaOmni2.5M/,8.151,Kenya,Africa,0.996,0.976,0.9801,1.023,0.9564,0.9347,1030312.0,#1F51FF
@@ -39,7 +39,7 @@ ThaiLaoAustroasiatic_Kutanan2021_HO,134,Human Origins Array,17.245,100.348,/proj
 MEXICO_PAGE_MEGA,134,MEGA,23.635,-102.553,/project/minhuic_62/jcahoon/PAGE/Original_subset,4.898,MEXICO,America,0.981,0.9579,0.9765,0.919,0.8561,0.9311,824327.0,#1F51FF
 Subsaharan-Africa_Li2008_Illumina650Y,127,Hap650Y,-3.913,16.608,/project/minhuic_62/charleston/HGDP_Illumina650Y_hg19,4.844,"South Africa, Central African Republic, Senegal, Democratic Republic of Congo, Namibia, Nigeria, Kenya",Africa,0.949,0.9224,0.9723,0.959,0.8759,0.913,611053.0,#FFA500
 Tibetan-and-Nepal_Wang2021_HO,115,Human Origins Array,30.985,95.323,minhuic/crui/Wang_Nature_2021/Curated/,4.745,Nepala amd Tibet,East Asia,0.898,0.8499,0.9468,0.737,0.6348,0.8619,485069.0,#FF10F0
-America_Li2008_Illumina650Y,108,Hap650Y,4.657,-76.258,/project/minhuic_62/charleston/HGDP_Illumina650Y_hg19,4.682,"Columbia, Brazil, Mexico",America,0.968,0.9415,0.9728,0.78,0.7079,0.9081,610259.0,#1F51FF
+America_Li2008_Illumina650Y,108,Hap650Y,4.657,-76.258,/project/minhuic_62/charleston/HGDP_Illumina650Y_hg19,4.682,"Colombia, Brazil, Mexico",America,0.968,0.9415,0.9728,0.78,0.7079,0.9081,610259.0,#1F51FF
 French-Polynesia_Parks2017_HC24,83,Infinium HumanCore,-17.68,-149.407,/project/minhuic_62/charleston/OGVP/,4.419,French Polynesia,Polynesia,0.977,0.9177,0.9391,0.917,0.7804,0.851,231972.0,#1F51FF
 Fiji_Parks2017_HC24,80,Infinium HumanCore,-17.713,178.065,/project/minhuic_62/charleston/OGVP/,4.382,Fiji,Oceania,0.815,0.766,0.9394,0.66,0.5619,0.8509,231976.0,#FF10F0
 TaiKadai-Vietnam_Liu2020_HO,72,Human Origins Array,20.967,105.122,minhuic/eztang/Liu_Mio.Bio.Evol_2020/Original,4.277,Vietnam,Southeast Asia,0.904,0.8547,0.9458,0.741,0.6404,0.8645,482478.0,#FFA500
