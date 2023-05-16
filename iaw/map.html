@@ -59,7 +59,6 @@
                 maxzoom: 3,
                 attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             }).addTo(l);
-
             $.get('map_clean.csv', function(csvString) {
 
             // Use PapaParse to convert string to array of objects
@@ -96,7 +95,7 @@
 
             var popup = L.popup()
                 .setLatLng([0, 0])
-                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! Based on 5-50% alleles: <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Pink: > 10% loss in quality </li> </ul>')
+                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! Based on 5-50% alleles: <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Red: > 10% loss in quality </li> </ul>')
                 .openOn(l);
         
             let btn = document.querySelector('#button');
