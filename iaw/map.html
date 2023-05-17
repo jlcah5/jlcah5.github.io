@@ -61,29 +61,11 @@
                 '0.01-0.05 MAF': marker_001,
                 '0.05-0.5 MAF': marker_005
             };
+            const overlayers = { };
+            const layerControl = L.control.layers( baselayers, overlayers).addTo(l);    
 
-            L.Control.Layers.include({
-                getActiveOverlays: function () {
 
-                    // Create array for holding active layers
-                    var active = [];
-
-                    // Iterate all layers in control
-                    this._layers.forEach(function (obj) {
-
-                        // Check if it's an overlay and added to the map
-                        if (obj.overlay && this._map.hasLayer(obj.layer)) {
-
-                            // Push layer to active array
-                            active.push(obj.layer);
-                        }
-                    });
-
-                    // Return array
-                    return active;
-                }
-            });
-            const layerControl = L.control.layers( baselayers).addTo(l);            
+   
         
             var tiles =  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=25676f01-2e90-4e6b-b835-d62c74fd0508', {
                 maxzoom: 3,
@@ -148,33 +130,46 @@
 
             });
             l.removeLayer(marker_001)
-            console.log(layerControl.getActiveOverlays())
             var label = ""
-            if(color_005)
+            if(l.hasLayer(marker_005))
             {
                 label = "Based on 5-50% alleles:"
             }
             else
             {
                 label = "Based on 1-5% alleles:"
-            }
+            };
             var popup = L.popup()
-                .setLatLng([0, 0])
-                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! <b>' +label+'</b> <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Red: > 10% loss in quality </li> </ul>')
-                .openOn(l);
+            .setLatLng([0, 0])
+            .setContent('Welcome to the Imputation Around the World Project. Select the MAF range in the top right corner. Click on any marker to learn more about the population! To review this panel, click on the bottom left button. <b>'+label+'</b><ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Red: > 10% loss in quality </li> </ul>')
+            .openOn(l);
            
-        
+            let control =document.getElementsByClassName('leaflet-control-layers-selector');
+            for (let i = 0; i < control.length; i++) {
+                control[i].addEventListener('click', (event) =>{
+                    if(l.hasLayer(marker_005))
+                    {
+                        label = "Based on 5-50% alleles:"
+                    }
+                    else
+                    {
+                        label = "Based on 1-5% alleles:"
+                    };
+                    popup = L.popup()
+                            .setLatLng([0, 0])
+                            .setContent('Welcome to the Imputation Around the World Project. Select the MAF range in the top right corner. Click on any marker to learn more about the population! To review this panel, click on the bottom left button. <b>'+label+'</b><ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Red: > 10% loss in quality </li> </ul>')
+                            .openOn(l);
+                }, false);
+            }
             let btn = document.querySelector('#button');
             btn.addEventListener('mouse', (event) =>{
                 document.body.style.cursor = `pointer`;
             });
 
             btn.addEventListener('click',(event) => {
-                console.log("click")
                 popup.openOn(l);
             });
-        </script>
-       
-
+            
+        </script>   
     </body>
 </html>
