@@ -48,55 +48,121 @@
     <body>
         <div class="container"><i class="fa-solid fa-compass" id="button"></i></div>
         <div id="window"></div>
-        <script>           
-            var l= L.map('window').setView([0, 0], 3);
+        <script>          
+            var color_005= true; 
+            const marker_005 = L.layerGroup();
+            const marker_001 = L.layerGroup();
+            var l= L.map('window', {layers: [marker_005, marker_001]}).setView([0, 0], 3);
+           
             l.setMaxBounds(L.latLngBounds(L.latLng(-90, -200), L.latLng(120, 200)));
             l.options.minZoom = 2;
             l.options.maxZoom = 7;
-            
+            const baselayers = {
+                '0.01-0.05 MAF': marker_001,
+                '0.05-0.5 MAF': marker_005
+            };
+
+            L.Control.Layers.include({
+                getActiveOverlays: function () {
+
+                    // Create array for holding active layers
+                    var active = [];
+
+                    // Iterate all layers in control
+                    this._layers.forEach(function (obj) {
+
+                        // Check if it's an overlay and added to the map
+                        if (obj.overlay && this._map.hasLayer(obj.layer)) {
+
+                            // Push layer to active array
+                            active.push(obj.layer);
+                        }
+                    });
+
+                    // Return array
+                    return active;
+                }
+            });
+            const layerControl = L.control.layers( baselayers).addTo(l);            
         
             var tiles =  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=25676f01-2e90-4e6b-b835-d62c74fd0508', {
                 maxzoom: 3,
                 attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             }).addTo(l);
+
+    
             $.get('map_clean.csv', function(csvString) {
 
             // Use PapaParse to convert string to array of objects
-                var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
-                console.log(data[125])
-                // For each row in data, create a marker and add it to the map
-                // For each row, columns `Latitude`, `Longitude`, and `Title` are required
-                for (var i in data) {
-                    
-                    var row = data[i];
-                    console.log(row.Population_Label);
+            var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
+            // For each row in data, create a marker and add it to the map
+            // For each row, columns `Latitude`, `Longitude`, and `Title` are required
+            for (var i in data) {
+                
+                var row = data[i];
+                console.log(row.Population_Label);
 
-                    var marker = L.circle([row.lat, row.lng], {
-                        color:"white",
-                        fillColor: row.color,
-                        weight:0.8,
-                        fillOpacity: 0.5,
-                        radius: 50000*row.N_log,
-                    }).bindPopup("<b>LABEL: </b>"+row.Population_Label+'<br>'+
-                                "<b>LOCATION: </b>"+row.Population_Location+'<br>'+
-                                "<b>CATEGORY: </b>"+row.Region_Category+'<br>'+
-                                "<b>SIZE: </b>"+row.N+'<br>'+
-                                "<b>LATITUDE: </b>"+row.lat+'<br>'+
-                                "<b>LONGITUDE: </b>"+row.lng+'<br>'+
-                                "<b>ARRAY: </b>"+row.Array+'<br>'+
-                                "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
-                                "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005+'<br>'
-                                ).bindTooltip(row.Population_Label);
-                    marker.addTo(l);
-                    }
+                // if(color_005)
+                // {
+                var marker = L.circle([row.lat, row.lng], {
+                    color:"white",
+                    fillColor: row.color_005,
+                    weight:0.8,
+                    fillOpacity: 0.5,
+                    radius: 50000*row.N_log,
+                }).bindPopup("<b>LABEL: </b>"+row.Population_Label+'<br>'+
+                            "<b>LOCATION: </b>"+row.Population_Location+'<br>'+
+                            "<b>CATEGORY: </b>"+row.Region_Category+'<br>'+
+                            "<b>SIZE: </b>"+row.N+'<br>'+
+                            "<b>LATITUDE: </b>"+row.lat+'<br>'+
+                            "<b>LONGITUDE: </b>"+row.lng+'<br>'+
+                            "<b>ARRAY: </b>"+row.Array+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005+'<br>'
+                            ).bindTooltip(row.Population_Label);
+                marker.addTo(marker_005);
+                // }
+                // else
+                // {
+                var marker = L.circle([row.lat, row.lng], {
+                    color:"white",
+                    fillColor: row.color_001,
+                    weight:0.8,
+                    fillOpacity: 0.5,
+                    radius: 50000*row.N_log,
+                }).bindPopup("<b>LABEL: </b>"+row.Population_Label+'<br>'+
+                            "<b>LOCATION: </b>"+row.Population_Location+'<br>'+
+                            "<b>CATEGORY: </b>"+row.Region_Category+'<br>'+
+                            "<b>SIZE: </b>"+row.N+'<br>'+
+                            "<b>LATITUDE: </b>"+row.lat+'<br>'+
+                            "<b>LONGITUDE: </b>"+row.lng+'<br>'+
+                            "<b>ARRAY: </b>"+row.Array+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005+'<br>'
+                            ).bindTooltip(row.Population_Label);
+                marker.addTo(marker_001);
+
+                // }
+
+                }
 
             });
-           
-
+            l.removeLayer(marker_001)
+            console.log(layerControl.getActiveOverlays())
+            var label = ""
+            if(color_005)
+            {
+                label = "Based on 5-50% alleles:"
+            }
+            else
+            {
+                label = "Based on 1-5% alleles:"
+            }
             var popup = L.popup()
                 .setLatLng([0, 0])
-                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! Based on 5-50% alleles: <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Red: > 10% loss in quality </li> </ul>')
+                .setContent('Welcome to the Imputation Around the World Project. Click on any marker to learn more about the population! <b>' +label+'</b> <ul><li> Blue: < 5% loss in quality.</li> <li>Yellow: >5% but < 10% loss in quality.</li> <li> Red: > 10% loss in quality </li> </ul>')
                 .openOn(l);
+           
         
             let btn = document.querySelector('#button');
             btn.addEventListener('mouse', (event) =>{
