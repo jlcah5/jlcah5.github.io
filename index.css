@@ -7,15 +7,17 @@ src: url("MavenPro-VariableFont_wght.ttf");
 }
 
 .navbar{
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
-    background-color: #27262E;
-    color:rgb(165, 165, 165);
+    /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
+    background-color: #27262E; */
+    color:#555155;
+    font-size:24px;
 }
 .navbar-brand{
-    color:rgb(224, 224, 224);
+    color:#555155;
+    font-size:30px;
 }
 .navbar-brand:hover{
-    color:rgb(270, 270, 270);
+    color:  #7c800e;
 }
 body{
     font-family: Maven;
@@ -23,6 +25,9 @@ body{
     color: #555155;
     padding:0;
 
+}
+b{
+    color: #7c800e;
 }
 p{
     margin:0;
@@ -39,10 +44,10 @@ p{
     
 a{
     text-decoration: none;
-    color:rgb(165, 165, 165);
+    color:#555155;
 }
 a:hover{
-    color: rgb(224, 224, 224);
+    color: #7c800e;
 }
 bi {
     vertical-align: -.125em;
