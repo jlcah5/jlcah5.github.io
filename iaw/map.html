@@ -61,14 +61,16 @@
             var color_005= true; 
             const marker_005 = L.layerGroup();
             const marker_001 = L.layerGroup();
-            var l= L.map('window', {layers: [marker_005, marker_001]}).setView([0, 0], 3);
+            const marker_01 = L.layerGroup();
+            var l= L.map('window', {layers: [marker_005, marker_001, marker_01]}).setView([0, 0], 3);
            
             l.setMaxBounds(L.latLngBounds(L.latLng(-90, -200), L.latLng(120, 200)));
             l.options.minZoom = 2;
             l.options.maxZoom = 7;
             const baselayers = {
                 '0.01-0.05 MAF': marker_001,
-                '0.05-0.5 MAF': marker_005
+                '0.05-0.1 MAF': marker_005,
+                '0.1-0.5 MAF': marker_01,
             };
             const overlayers = { };
             const layerControl = L.control.layers( baselayers, overlayers).addTo(l);    
@@ -109,7 +111,8 @@
                             "<b>LONGITUDE: </b>"+row.lng+'<br>'+
                             "<b>ARRAY: </b>"+row.Array+'<br>'+
                             "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
-                            "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005+'<br>'
+                            "<b>Rsq RATIO TO UK10K (0.05-0.1MAF): </b>"+row.Ratio005+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.1-0.5MAF): </b>"+row.Ratio01+'<br>'
                             ).bindTooltip(row.Population_Label);
                 marker.addTo(marker_005);
                 // }
@@ -129,9 +132,29 @@
                             "<b>LONGITUDE: </b>"+row.lng+'<br>'+
                             "<b>ARRAY: </b>"+row.Array+'<br>'+
                             "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
-                            "<b>Rsq RATIO TO UK10K (0.05-0.5MAF): </b>"+row.Ratio005+'<br>'
+                            "<b>Rsq RATIO TO UK10K (0.05-0.1MAF): </b>"+row.Ratio005+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.1-0.5MAF): </b>"+row.Ratio01+'<br>'
                             ).bindTooltip(row.Population_Label);
                 marker.addTo(marker_001);
+
+                var marker = L.circle([row.lat, row.lng], {
+                    color:"white",
+                    fillColor: row.color_01,
+                    weight:0.8,
+                    fillOpacity: 0.5,
+                    radius: 50000*row.N_log,
+                }).bindPopup("<b>LABEL: </b>"+row.Population_Label+'<br>'+
+                            "<b>LOCATION: </b>"+row.Population_Location+'<br>'+
+                            "<b>CATEGORY: </b>"+row.Region_Category+'<br>'+
+                            "<b>SIZE: </b>"+row.N+'<br>'+
+                            "<b>LATITUDE: </b>"+row.lat+'<br>'+
+                            "<b>LONGITUDE: </b>"+row.lng+'<br>'+
+                            "<b>ARRAY: </b>"+row.Array+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.01-0.05MAF): </b>"+row.Ratio001+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.05-0.1MAF): </b>"+row.Ratio005+'<br>'+
+                            "<b>Rsq RATIO TO UK10K (0.1-0.5MAF): </b>"+row.Ratio01+'<br>'
+                            ).bindTooltip(row.Population_Label);
+                marker.addTo(marker_01);
 
                 // }
 
@@ -139,14 +162,19 @@
 
             });
             l.removeLayer(marker_001)
+            l.removeLayer(marker_01)
             var label = ""
             if(l.hasLayer(marker_005))
             {
-                label = "Based on 5-50% alleles:"
+                label = "Based on 5-10% alleles:"
+            }
+            else if(l.hasLayer(marker_001))
+            {
+                label = "Based on 1-5% alleles:"
             }
             else
             {
-                label = "Based on 1-5% alleles:"
+                label = "Based on 10-50% alleles:"
             };
             var popup = L.popup()
             .setLatLng([0, 0])
@@ -158,11 +186,15 @@
                 control[i].addEventListener('click', (event) =>{
                     if(l.hasLayer(marker_005))
                     {
-                        label = "Based on 5-50% alleles:"
+                        label = "Based on 5-10% alleles:"
+                    }
+                    else if(l.hasLayer(marker_001))
+                    {
+                        label = "Based on 1-5% alleles:"
                     }
                     else
                     {
-                        label = "Based on 1-5% alleles:"
+                        label = "Based on 10-50% alleles:"
                     };
                     popup = L.popup()
                             .setLatLng([0, 0])
