@@ -53,3 +53,16 @@ bi {
     vertical-align: -.125em;
     fill: currentColor;
 }
+h2{
+    font-size:30px;
+}
+h3{
+    font-size:20px;
+    font-weight: normal;
+}
+h3:hover{
+    color:#7c800e;
+    cursor: pointer;
+    
+}
+
