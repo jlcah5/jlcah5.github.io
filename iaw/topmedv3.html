@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jordan Cahoon</title>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/682349c1eb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../index.css">
+        <style>
+           
+            .btn{
+                background-color: #609EE0;
+                border-color:#609EE0;
+            }
+            h3{
+                font-size:20px;
+                font-weight: normal;
+                color:#7c800e;
+            }
+            h3:hover{
+                cursor: auto;
+            }
+            .thumbnail {
+                width: 400px;
+                cursor: pointer;
+                margin: 20px;
+            }
+            .modal-dialog {
+                max-width: 85%;  /* Adjust this percentage as needed */
+                padding:0;
+            }
+          
+        </style>
+
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVNWJ7W2B1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DVNWJ7W2B1');
+    </script>
+    <body>
+        <nav class="navbar navbar-light bg-light fixed-top" >
+            <div class="container-sm" >
+              <a class="navbar-brand" href="../index.html">
+                Jordan Cahoon
+              </a>
+             <p class="alignright"> <a href="../index.html#projects">Projects</a> &emsp; <a href="../docs/cahoon_cv.pdf">CV </a> </p>
+            </div>
+        </nav>
+
+        <div class="b-example-divider"></div>
+        <div class="b-example-divider"></div>
+
+        <div class="container-sm" >
+            <div class="m-4 row">
+                <div class="col my-auto">
+                    <h1>Note on TOPMed R3</h1>   
+
+                    <p>In December 2023, the <a href="https://imputation.biodatacatalyst.nhlbi.nih.gov/#!", target="_blank">TOPMed imputation server</a> published a major update. These changes included a new reference panel, TOPMed-r3, with ~30% more sites and samples than the previous iteration, TOPMed-r2. Given the expanded samples sizes, there is potential that populations outlined in our work could now be imputed with higher accuracy (see our interactive world map to view how the TOPMed-r2 panel imputes global populations). In this note, we provided additional analysis showing that imputation of diverse, global, populations indeed improved with TOPMed-r3 panel, but persistent disparity still exist across these populations in general.</p>
+                    <br>
+                    <h3>New samples improve imputation accuracy for target populations </h2>
+                    <p>
+                        We selected five populations (Afro-Caribbean, Filipino, Vietnamese, Thai, Pakistani) discussed in our work and examined the Imputation Rsq, an estimate of imputation accuracy. Imputation Rsq was stratified across minor allele frequency (MAF) to control the impact of allele frequency on imputation accuracy. In addition to imputing each target population, we also imputed a European control population matching in SNP content and sample size, extracted from the UK10K BioBank. (We additionally have to correct for mis-specified reference and alternative alleles, a feature that is no longer automatically corrected by the TOPMed imputation server.) Across all populations, the TOPMed-r3 panel improved imputation Rsq for the target population, likely due to the additional reference samples. The TOPMed-r3 panel improved mean imputation Rsq for variants with 1-5% MAF for the Afro-Caribbean, Filipino, Vietnamese, Thai, and Pakistani populations by 0.05%, 4.9%, 3.7%, 4.6%, and 13.3%, respectively (Figure 1). Interestingly, in four out of the five instances tested, genotypes of the control UK10K population were imputed more poorly using the TOPMed-r3 reference panel; imputation Rsq decreased for variants with 1-5% MAF between 0.4% to 1.3% (Figure 1).
+                    </p>
+                    <br>
+                    <em>Figure 1: Boxplot of Imputation Rsq for target and control populations imputed with TOPMed-r2 vs. TOPMed-r3</em>
+                    <div class="container text-center">
+                        <img src="../img/boxplot.png" class="thumbnail" alt="Click to enlarge">
+                    </div>
+                    <h3>Gaps in imputation accuracy persist in TOPMed-r3</h3>
+                    <p>
+                        Imputing with theTOPMed-r3 panel appears to improve the imputation Rsq of the target population with respect to the control population. Figure 2 shows the mean imputation Rsq for the UK10K control population plotted against the target population for both TOPMed-r2 and -r3. The x=y line indicates when target and control populations are imputed with the same accuracy. Across all populations, imputation with TOPMed-r3 particularly improves accuracy for rare variants (e.g. MAF < 5%). For common variants (e.g. MAF > 5%), the Pakistani population is the only population with significant improvement in shrinking the gap between the target and control accuracies. For all minor allele frequencies, there is little difference for the Afro-Caribbean population, as this population is imputed with nearly equal imputation accuracy as the controls.
+                    </p>
+                    <br>
+                    <em>Figure 2: UK10K vs Target Imputation Rsq for TOPMed-r2 and TOPMed-r3</em>
+                    <div class="container text-center">
+                        <img src="../img/distance.png" class="thumbnail" alt="Click to enlarge">
+                    </div>
+                    <p>
+                        In our previous work, we used the ratio of target to control mean imputation Rsq to summarize the loss of accuracy for non-European populations. Figure 3 plots this ratio for TOPMed-r3 vs TOPMed-r2. Populations plotted above the x=y line indicates that imputation with the TOPMed-r3 panel improves imputation with respect to the UK10K control population. Imputing the Thai, Vietnamese, Filipino, and Pakistani populations with the TOPMed-r3 panel shows improvement in the ratio over that of TOPMed-r2 for rare variants (MAF < 5%). However, for common variants (MAF > 5%), there is little difference, likely because these variants are already imputed well. Ultimately, despite these improvements, the Thai, Vietnamese, Filipino, and Pakistani populations are still imputed with lower accuracy compared to that of the European-ancestry controls from UK10K.
+                    </p>
+                    <br>
+                    <em>Figure 3: Ratio Target to Control Mean Imputation Rsq for TOPMed-r3 vs. TOPMed-r2</em>
+                    <div class="container text-center">
+                        <img src="../img/ratios.png" class="thumbnail" alt="Click to enlarge">
+                    </div>
+                    <h3>Closing Thoughts</h3>
+                    <p> 
+                        Our results demonstrate that imputing with the TOPMed-r3 panel improves imputation accuracy for ancestrally-diverse populations. However, despite these improvements, gaps in imputation accuracy still persist, especially when imputing rarer variants. While the further expansions of the TOPMed imputation server are welcomed, the conclusions of our original work remain qualitatively the same, and we must continue to increase representation in large imputation panels.
+                    </p>
+                    
+                </div>                
+            </div>
+        </div>
+
+        <!--</div>-->
+        <div class="container-sm" id="appsum">
+
+            <div class="row">
+                <div class="col text-center">
+                    <p> <a href="https://github.com/jlcah5" target="_blank"><i class="fa-brands fa-github-square"></i></a> <a href="https://www.linkedin.com/in/jlcah5/" target="_blanl"><i class="fa-brands fa-linkedin"></i> </a></p>
+                </div>        
+            </div>
+        </div>
+ 
+
+      
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <!-- Enlarged Image -->
+                <img src="" id="enlargedImage"  class="img-fluid" alt="Enlarged Image">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // jQuery to handle the click event and display the enlarged image in the modal
+        $(document).ready(function() {
+            $('.thumbnail').click(function() {
+                // Get the source of the clicked image
+                var imageSrc = $(this).attr('src');
+                
+                // Set the source of the modal image to the clicked image
+                $('#enlargedImage').attr('src', imageSrc.replace('400', '1000')); // Replace the size for the larger image
+                
+                // Show the modal
+                $('#imageModal').modal('show');
+            });
+        });
+    </script>
+
+    </body>
+</html>
