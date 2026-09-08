@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research – Jordan Cahoon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jordan Cahoon's research in clinical AI and human genetics, including electronic health record benchmarks, rare disease, and population genetics.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/682349c1eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="research.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVNWJ7W2B1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DVNWJ7W2B1');
+    </script>
+</head>
+<body class="research-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar fixed-top" aria-label="Main navigation">
+        <div class="container-sm w-100 d-flex justify-content-end">
+            <p class="m-0">
+                <a href="index.html">about</a> &emsp;
+                <a href="research.html" aria-current="page">research</a> &emsp;
+                <a href="etc.html">etc</a> &emsp;
+                <a href="docs/cahoon_cv.pdf">cv</a>
+            </p>
+        </div>
+    </nav>
+    <main class="research-container" id="main">
+        <div class="research-intro">
+            <h1>Research</h1>
+            <p class="research-lede">My research interests lie at the intersection of human genetics and clinical AI. I aim to harmonize diverse data sources, from electronic health records to multi-omics, to understand the genetic basis of disease and advance patient care.</p>
+        </div>
+
+        <section class="research-section" id="clinical-ai" aria-labelledby="clinical-ai-heading">
+            <header class="section-heading">
+                <div>
+                    <h2 id="clinical-ai-heading">Clinical AI</h2>
+                    <p class="research-question">How can we make AI useful, efficient, and safe enough for everyday patient care?</p>
+                </div>
+            </header>
+            <article class="paper-entry paper-featured">
+                <div class="paper-year">In prep.</div>
+                <div class="paper-info">
+                    <h3 class="paper-title">A Living Benchmark for Information Retrieval from Electronic Health Records</h3>
+                    <p class="paper-citation"><strong>Cahoon JL</strong>, Stanwyck CO, et al.</p>
+                    <p class="paper-desc">Building a benchmark to evaluate how well language models retrieve information from electronic health records and reason across a patient's longitudinal history.</p>
+                    <div class="paper-links">
+                        <a class="paper-link paper-link-primary" href="https://openreview.net/forum?id=hQDn96O8rP" target="_blank" rel="noopener noreferrer">Preliminary version · ML4H 2025 <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </article>
+            <details class="research-archive">
+                <summary>
+                    <h3>Publications &amp; preprints</h3>
+                    <span class="details-action"><span class="details-closed">Show</span><span class="details-open">Hide</span><span class="details-icon" aria-hidden="true"></span></span>
+                </summary>
+                <article class="paper-entry">
+                    <div class="paper-year">2026</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Clinically Grounded Privacy Evaluation of Medical LMs</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Accepted · EMNLP 2026</span></div>
+                                <p class="paper-citation">Ronaghi S, Tonekaboni S, Stempfle L, Utti V, <strong>Cahoon JL</strong>, Hendrix N, Vala A, Ghassemi M, Alsentzer E.</p>
+                                <p class="paper-desc">A framework for evaluating patient information leakage from medical language models under realistic clinical privacy threats.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://arxiv.org/abs/2606.09590" target="_blank" rel="noopener noreferrer">Preprint <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2026</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Clinical Note Bloat Reduction for Efficient LLM Use</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">In review</span></div>
+                                <p class="paper-citation"><strong>Cahoon JL</strong>, Stanwyck C, Aali A, Madding R, Sun E, Jiang Y, Dhanasekaran R, Alsentzer E.</p>
+                                <p class="paper-desc">TRACE removes templated and duplicated content from clinical notes to reduce language model costs while preserving information for downstream clinical tasks.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://arxiv.org/abs/2604.16364" target="_blank" rel="noopener noreferrer">Preprint <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2025</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Structured Prompts Improve Evaluation of Language Models</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">In submission</span></div>
+                                <p class="paper-citation">Aali A, Mohsin MA, Bikia V, Singhvi A, Gaus R, Bedi S, Cui H, Fuentes M, Unell A, Mai Y, <strong>Cahoon JL</strong>, Pfeffer M, Daneshjou R, Koyejo S, Alsentzer E, Potts C, Shah NH, Chaudhari AS.</p>
+                                <p class="paper-desc">Studying how structured prompting changes benchmark performance and model rankings, using a reproducible framework that integrates DSPy and HELM.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://arxiv.org/abs/2511.20836" target="_blank" rel="noopener noreferrer">Preprint <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2023</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Continuous Stress Monitoring for Healthcare Workers: Evaluating Generalizability Across Real-World Datasets</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-venue">ACM-BCB</span></div>
+                                <p class="paper-citation"><strong>Cahoon JL</strong>, Garcia L.</p>
+                                <p class="paper-desc">Evaluating wearable-based stress detection across three datasets and comparing gradient boosting with other machine learning methods for continuous monitoring.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://doi.org/10.1145/3584371.3612974" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </details>
+        </section>
+
+        <section class="research-section genetics-section" id="human-genetics" aria-labelledby="human-genetics-heading">
+            <header class="section-heading">
+                <div>
+                    <h2 id="human-genetics-heading">Human Genetics</h2>
+                    <p class="research-question">How can advances in data collection and processing help us understand genetic disease?</p>
+                </div>
+            </header>
+            <article class="paper-entry paper-featured">
+                <div class="paper-year">In prep.</div>
+                <div class="paper-info">
+                    <h3 class="paper-title">Impact of participant-, clinician-, and EHR-derived phenotyping on rare disease diagnosis: a mixed-methods study</h3>
+                    <p class="paper-citation">Ungar RA, <strong>Cahoon JL</strong>, Reuter C, Carter J, Bonner D, Cho M, Montgomery SB, Alsentzer E, Halley M.</p>
+                    <p class="paper-desc">Investigating how phenotyping from participants, clinicians, and electronic health records affects rare disease diagnosis.</p>
+                    <div class="paper-links">
+                        <a class="paper-link" href="docs/hpo_wa_poster.pdf" target="_blank" rel="noopener noreferrer">WA poster <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </article>
+            <details class="research-archive">
+                <summary>
+                    <h3>Publications</h3>
+                    <span class="details-action"><span class="details-closed">Show</span><span class="details-open">Hide</span><span class="details-icon" aria-hidden="true"></span></span>
+                </summary>
+                <article class="paper-entry">
+                    <div class="paper-year">2025</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">A likelihood-based framework for demographic inference from genealogical trees</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-venue">Nature Genetics</span></div>
+                                <p class="paper-citation">Fan C, <strong>Cahoon JL</strong>, Dinh BL, Vecchyo DO, Huber C, Edge MD, Mancuso N, Chiang CWK.</p>
+                                <p class="paper-desc">Inferring population demographic history from genealogical trees through a likelihood-based framework.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://doi.org/10.1038/s41588-025-02129-x" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2024</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Imputation Accuracy Across Global Human Populations</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-venue">American Journal of Human Genetics</span></div>
+                                <p class="paper-citation"><strong>Cahoon JL</strong>, Rui X, Tang E, Simons C, Langie J, Chen M, Lo YC, Chiang CWK.</p>
+                                <p class="paper-desc">Characterizing imputation accuracy across ancestrally diverse populations and improving recovery of population-specific variants through meta-imputation.</p>
+                                <div class="paper-links">
+                                    <a class="paper-link" href="https://doi.org/10.1016/j.ajhg.2024.03.011" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                                    <a class="paper-link" href="iaw/map.html" target="_blank" rel="noopener noreferrer">Interactive map <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2022</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Inverted genomic regions between reference genome builds in humans impact imputation accuracy and decrease the power of association testing</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-venue">Human Genetics and Genomics Advances</span></div>
+                                <p class="paper-citation">Sheng X, Xia L, <strong>Cahoon JL</strong>, Conti DV, Haiman CA, Kachuri L, Chiang CWK.</p>
+                                <p class="paper-desc">Identifying and correcting strand errors in inverted genomic regions during coordinate conversion, including palindromic variants, to improve imputation and association testing.</p>
+                                <div class="paper-links">
+                                    <a class="paper-link" href="https://doi.org/10.1016/j.xhgg.2022.100159" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                                    <a class="paper-link" href="https://github.com/GraceSheng/triple-liftOver" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </details>
+        </section>
+
+        <details class="other-projects" id="other-projects">
+            <summary>
+                <h2>Other Projects</h2>
+                <span class="details-action"><span class="details-closed">Show</span><span class="details-open">Hide</span><span class="details-icon" aria-hidden="true"></span></span>
+            </summary>
+            <div class="other-projects-content">
+                <p class="other-projects-intro">Additional work in immunology, machine learning, and computing for social good.</p>
+                <article class="paper-entry">
+                    <div class="paper-year">2025</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Impact of Sanctuary Policies on Healthcare Utilization Among U.S. Agricultural Workers: A Causal Inference Approach</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Course project</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>. Outcomes Analysis, Stanford University.</p>
+                                <p class="paper-desc">Applying causal inference to study the relationship between sanctuary policies and healthcare utilization among agricultural workers.</p>
+                                <div class="paper-links"><a class="paper-link" href="docs/Chen_Cahoon_Outcomes2025_Final.pdf" target="_blank" rel="noopener noreferrer">Report <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2022–23</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Deep Learning for Cancer Diagnosis from Digital Pathology</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Research internship</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>. Ellison Institute for Transformative Medicine.</p>
+                                <p class="paper-desc">Developing models for breast and prostate cancer diagnosis and refining a cloud-based quality control pipeline for whole slide images.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2022</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Improving Large Language Models for Code-Switch Language</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Course project</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>. CSCI 499, University of Southern California.</p>
+                                <p class="paper-desc">Evaluating multilingual language models on Spanglish and comparing fine-tuning on code-switched and monolingual data.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://swabhs.com/fall23-csci499-lm4nlp/assets/reports/AryanGulati_JordanCahoon_NicolasPerez.pdf" target="_blank" rel="noopener noreferrer">Report <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2022</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Predicting Foster Care Outcomes in the United States with the National Youth in Transition Database</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Course project</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>. CSCI 461, University of Southern California.</p>
+                                <p class="paper-desc">Analyzing predictors of substance abuse referrals for young people aging out of the U.S. foster care system.</p>
+                                <div class="paper-links"><a class="paper-link" href="docs/FOSTER_JordanCahoon_ProjectFinalReport_fall2022.pdf" target="_blank" rel="noopener noreferrer">Report <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2022</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Computational Agroecology: Reinforcement Learning for Polyculture Design</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">CAIS++ project</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>, et al. University of Southern California.</p>
+                                <p class="paper-desc">Developing a reinforcement learning agent to select and place crops in polycultures for improved sustainability and yield.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://github.com/usc-caisplusplus/proj-agroecology" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2021</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">PGD2 and CRTH2 counteract Type 2 cytokine-elicited intestinal epithelial responses during helminth infection</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-venue">Journal of Experimental Medicine</span></div>
+                                <p class="paper-citation">Oyesola OO, et al.</p>
+                                <p class="paper-desc">Analyzing single-cell RNA sequencing data to characterize how the PGD2–CRTH2 pathway regulates intestinal epithelial responses during helminth infection.</p>
+                                <div class="paper-links"><a class="paper-link" href="https://doi.org/10.1084/jem.20202178" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2021</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">Malaria Prediction with Weather Features</h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Project X</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>, et al. University of Toronto Project X.</p>
+                                <p class="paper-desc">Using climate and outbreak data to predict malaria outbreaks in regions with sparse surveillance records.</p>
+                                <div class="paper-links">
+                                    <a class="paper-link" href="docs/projectx_cais_final.pdf" target="_blank" rel="noopener noreferrer">Report <span aria-hidden="true">↗</span></a>
+                                    <a class="paper-link" href="https://github.com/shannonmb144/projectx2021" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article class="paper-entry">
+                    <div class="paper-year">2019</div>
+                    <div class="paper-info">
+                        <details class="paper-details">
+                            <summary>
+                                <h3 class="paper-title">CRISPR-Cas9 Delivery in <em>Chlamydomonas reinhardtii</em></h3>
+                                <span class="details-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="paper-details-content">
+                                <div class="paper-meta"><span class="paper-status">Research internship</span></div>
+                                <p class="paper-citation"><strong>Jordan Cahoon</strong>. Baliga Lab, Institute for Systems Biology.</p>
+                                <p class="paper-desc">Developing an electroporation protocol for CRISPR-Cas9 delivery and investigating lipid production under nitrogen starvation.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </details>
+    </main>
+    <footer class="container-sm mt-5 mb-4 site-footer">
+        <div class="row">
+            <div class="col text-center">
+                <p>
+                    <a href="https://github.com/jlcah5" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/jlcah5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Reveal the collection when a visitor opens a direct link to it.
+        const otherProjects = document.getElementById('other-projects');
+        function revealLinkedProjects() {
+            if (window.location.hash === '#other-projects') {
+                otherProjects.open = true;
+            }
+        }
+        window.addEventListener('hashchange', revealLinkedProjects);
+        revealLinkedProjects();
+    </script>
+</body>
+</html>

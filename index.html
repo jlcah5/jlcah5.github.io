@@ -2,31 +2,20 @@
 <html lang="en">
     <head>
         <title>Jordan Cahoon</title>
-       
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
         <script src="https://kit.fontawesome.com/682349c1eb.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="index.css">
         <style>
-           
-            img{
+            #profile-img {
                 width: 100%;
                 border-radius: 5px;
                 object-fit: contain;
                 box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
-
             }
-        
-            .btn{
-                background-color: #609EE0;
-                border-color:#609EE0;
-            }
-          
         </style>
-
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVNWJ7W2B1"></script>
@@ -34,183 +23,79 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-DVNWJ7W2B1');
     </script>
     <body>
-        <nav class="navbar navbar-light bg-light fixed-top" >
-            <div class="container-sm" >
-              <a class="navbar-brand" href="index.html">
-                Jordan Cahoon
-              </a>
-             <p class="alignright"> <a href="index.html#projects">Projects</a> &emsp; <a href="docs/cahoon_cv.pdf">CV </a> </p>
+        <nav class="navbar fixed-top">
+            <div class="container-sm w-100 d-flex justify-content-end">
+                <p class="m-0">
+                    <a href="index.html">about</a> &emsp;
+                    <a href="research.html">research</a> &emsp;
+                    <a href="etc.html">etc</a> &emsp;
+                    <a href="docs/cahoon_cv.pdf">cv</a>
+                </p>
             </div>
         </nav>
 
-        <div class="b-example-divider"></div>
-        <div class="b-example-divider"></div>
+        <!-- About -->
 
-        <div class="container-sm" >
+        <div class="container-sm">
             <div class="m-4 row">
                 <div class="col my-auto">
+                    <h1 class="site-name">Jordan Cahoon</h1>
+                    <p class="profile-contact">
+                        <a href="https://scholar.google.com/citations?user=OMHIu9UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                        <span>[last name] <em>at</em> stanford <em>dot</em> edu</span>
+                    </p>
                     <p>
-                        <br>
-                        <b>Hello, I’m Jordan!</b> <br><br> I’m a first year PhD student in the Department of Biomedical Data Science at Stanford University where I am advised by <a href="https://www.emilyalsentzer.com/"><b>Emily Alsentzer</b></a> and <a href="https://med.stanford.edu/profiles/stephen-montgomery"><b>Stephen Montgomery</b></a>. I’m passionate about developing statistical and machine learning methods to study human genetics. My most recent work focuses on combining phenotypic information stored in electronic health records and multiomics data to improve causal gene ranking. In my free time, I love bullet journaling, playing with my cat, baking bread, and hiking! <br><br> Previously, I’ve developed deep learning methods for ancestral recombination graphs and I’ve assessed genotype imputation quality for ancestrally diverse populations. I graduated with a Bachelor of Science in computer science with a minor in quantitative and computational biology from the University of Southern California. I’ve had the privilege to work with amazing mentors including <a href="https://chianglab.usc.edu/"><b>Charleston Chiang</b></a>, <a href="https://lagarcia.us/"><b>Luis Garcia</b></a>, <a href="https://www.med.upenn.edu/mathieson-lab/"><b>Iain Mathieson</b></a>, and <a href="https://www.smathieson.sites.haverford.edu/"><b>Sara Mathieson</b></a>. 
-                    </p>                                    
-                    
-                    </div>                
-                    <div class="col-md">
-                        <img src="img/profile.jpeg">
-                    </div>
+                        I'm a PhD student in the Department of Biomedical Data Science at Stanford University where I am advised by <a href="https://www.emilyalsentzer.com/"><b>Emily Alsentzer</b></a> and <a href="https://med.stanford.edu/profiles/stephen-montgomery"><b>Stephen Montgomery</b></a>. My research focuses on developing AI to advance the diagnosis and treatment of genetic diseases, particularly rare diseases. Before coming to Stanford, I earned a Bachelor of Science in computer science with a minor in quantitative and computational biology from the University of Southern California. I've had the privilege to work with amazing mentors including <a href="https://chianglab.usc.edu/"><b>Charleston Chiang</b></a>, <a href="https://lagarcia.us/"><b>Luis Garcia</b></a>, <a href="https://www.med.upenn.edu/mathieson-lab/"><b>Iain Mathieson</b></a>, and <a href="https://www.smathieson.sites.haverford.edu/"><b>Sara Mathieson</b></a>. In my free time, I love bullet journaling, playing with my cat, baking bread, and hiking!
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img id="profile-img" src="img/profile.jpeg" alt="Jordan Cahoon">
+                </div>
             </div>
         </div>
 
-        <div class="container-sm" >
-            <h2  id="projects" class="pb-2 border-bottom">Projects</h2>
-            <div class="col d-flex align-items-start my-2 mx-4">
+        <!-- News -->
+        <div class="container-sm mt-4">
+            <h2 class="pb-2 border-bottom">News</h2>
+
+            <div class="news-item my-3 mx-2">
+                <span class="news-date">Mar 2026</span>
                 <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#retrievers"><i class="fa-solid fa-laptop-medical"></i>&emsp;Domain-Guided Informational Retrieval for Clinical Records </h3>
-                    <div id="retrievers" class="collapse mx-3 my-2"> 
-                        <p>Winter 2025 rotation project advised by <a href="https://www.emilyalsentzer.com/"><b>Emily Alsentzer</b></a>. Details to come.</p>  
-                    </div>
-                    
-                </div>
-            </div>  
-            <!-- <div class="col d-flex align-items-start my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#salz"><i class="fa-solid fa-arrows-down-to-people"></i>&emsp;Genome-wide association studes powered by DNA language models </h3>
-                    <div id="salz" class="collapse mx-3 my-2"> 
-                        <p>Fall 2024 rotation project with the <a href="https://salzmanlab.stanford.edu/"><b>Salzman Lab</b></a>.</p>  
-                    </div>
-                    
-                </div>
-            </div>   -->
-            <div class="col d-flex align-items-start my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#arg"><i class="fa-solid fa-tree"></i>&emsp;Detecting ancient introgression with genealogical trees</h3>
-                    <div id="arg" class="collapse mx-3 my-2"> 
-                        <p>Project advised by Charleston Chiang, Iain Mathieson, and Sara Mathieson. Details to come.</p>  
-                    </div>
-                    
-                </div>
-            </div>  
-            <div class="col d-flex align-items-start my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#llm-cs"><i class="fa-solid fa-language"></i>&emsp;Improving Large Language Models for Code-Switch Language</h3>
-                    <div id="llm-cs" class="collapse mx-3 my-2"> 
-                        <p>Code-switch (CS) language is a common linguistic phenomenon where multilingual speakers fluently blend multiple languages together. Despite its frequency in both spoken and written language, CS is largely understudied in natural language processing. Improving model performance on CS is critical in ensuring language models can be deployed in real world settings.  Our project aims to improve performance of pre-trained large language models on Spanish-English CS, colloquially known as Spanglish, for language modeling and sentiment analysis.  In this work, we demonstrate that multilingual pre-trained language models perform significantly worse on Spanglish compared to both English and Spanish. We find that fine-tuning pre-trained models on Spanish, English, and Spanglish all enhance the performance on CS input for both tasks. Particularly, for the language modeling task, fine-tuning on Spanglish achieves the largest drop in perplexity compared to the other fine-tuning methods. We also analyzed the cross-lingual embedding space to understand how fine-tuning on CS may affect the quality of embeddings. By comparing the similarity of embeddings for parallel sentences in Spanish and English, we find fine-tuning models on CS sentences potentially improves language agnostic embeddings more effectively than fine-tuning on English or Spanish alone. Currently CS research is restricted by the few, small available datasets. As more data is gathered, we expect the benefits of fine-tuning models on CS to be more apparent compared to training on monolingual input. This project was part of independent research for CSCI 499: Large Langage Models in Natural Language Processing.</p>                                        
-                        <a href="docs/cs.pdf" target="_blank" class="btn btn-primary">
-                            Report
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>  
-            <div class="col d-flex align-items-start my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#stress"><i class="fa-solid fa-user-nurse"></i>&emsp;Continuous Stress Prediction for Healthcare Workers</h3>
-                    <div id="stress" class="collapse mx-3 my-2"> 
-                        <p>Healthcare workers are constantly exposed to high-stress working conditions that increase burnout rates and lower the quality of patient care. While it is vital to continuously monitor healthcare worker stress to provide necessary interventions, traditional survey methods can interfere with tasks in real-world healthcare contexts. Wearable devices offer a non-invasive way to detect worker stress continuously; however, predictions may be influenced by an individual’s activities and definitions of stress. In this project, we identified extreme gradient boosting trees as a promising method for continuous stress prediction, achieving a ROC-AUC of 0.83 using real-world health worker data. In addition to benchmarking continuous stress prediction, we assessed the dataset generalizability with domain adaptation. Interestingly, we found that supervised domain adaptation improves performance across all datasets, suggesting the capacity to aggregate future datasets. Through this project, we highlighted numerous challenges to generalizing stress detection for health workers, including differing stress definitions and sensor types among available datasets. </p>                                        
-                        <a href="https://openreview.net/forum?id=7og2bOAXhup" target="_blank" class="btn btn-primary">
-                        Short Paper Accepted at ACM-BCB 2023
-                        </a>
-                    </div>
+                    <strong>TRACE is released</strong>
+                    <p>My first PhD preprint, <a href="https://arxiv.org/abs/2604.16364">Clinical Note Bloat Reduction for Efficient LLM Use</a>, is now available! TRACE is a method for removing note bloat for efficient LLM inference.</p>
                 </div>
             </div>
-            <div class="col d-flex align-items-start  my-2 mx-4">
+            <div class="news-item my-3 mx-2">
+                <span class="news-date">Aug 2025</span>
                 <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#iaw"><i class="fa-solid fa-globe"></i>&emsp;Imputation Around the World</h3>
-                    <div id="iaw" class="collapse mx-3 my-2"> 
-                        <p>By predicting unobserved genotypes based on sequenced individuals, imputation increases marker density and enables large-scale genome-wide association studies. The state-of-the-art imputation reference panel released by the Trans-Omics for Precision Medicine (TOPMed) contains a substantial number of admixed African and Hispanic/Latino samples. As a result, these populations are imputed with nearly the same efficacy as European cohorts. However, imputation for ancestrally diverse populations primarily residing outside of North America still falls short in performance due to persisting underrepresentation. My research aims to quantify quality weaknesses in the TOPMed reference panel and offer solutions to help close the quality gap of analysis between European and Non-European populations.</p>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0002929724000843" target="_blank" class="btn btn-primary">
-                        Publication
-                        </a>
-                        <a href="iaw/map.html" target="_blank" class="btn btn-primary">
-                            Interactive Map of Populations
-                        </a>
-                    </div>
+                    <strong>Awarded the Warren Alpert Fellowship</strong>
+                    <p>Excited to join the most recent cohort of the <a href="https://dbds.stanford.edu/warren-alpert-scholars/">Warren Alpert Computational Biology & Artificial Intelligence Fellowship</a>, which will help support my PhD!</p>
+                </div>
+            </div>
+            <div class="news-item my-3 mx-2">
+                <span class="news-date">Sep 2024</span>
+                <div>
+                    <strong>Started PhD at Stanford University</strong>
+                    <p>Began PhD studies in the Department of Biomedical Data Science, advised by Emily Alsentzer and Stephen Montgomery.</p>
                 </div>
             </div>
 
-            <div class="col d-flex align-items-start  my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#foster"><i class="fa-solid fa-children"></i>&emsp;An Analysis on Substance Abuse Referrals in the United States Fostercare System </h3>
-                    <div id="foster" class="collapse mx-3 my-2"> 
-                        <p>The National Youth in Transition Database (NYTD) hosts one of the largest sources of information on youth aging out of the foster care system in the United States. It covers nearly 10 years and consists of basic demographic information, outcome data, and independent living service (ILS) utilization for thousands of individuals. This report examined substance abuse referrals to analyze indicators for high-risk behavior in youth who may lack adequate support systems. We identified that having a connection to an adult and current school enrollment increases the likelihood of substance abuse referrals. This suggests that youth without strong mentorship may be at risk for not having access to substance abuse referrals. On the other hand, educational aid, public food assistance, and other public financial assistance may deter referral, meaning youth who receive these aid forms may have lower rates of substance abuse. <br> <br>This report was conducted as independent research for CSCI 461: Artificial Intelligence in Sustainable Development under the guidance of Bistra Dilkina. </p>                    
-                        <a href="docs/FOSTER_JordanCahoon_ProjectFinalReport_fall2022.pdf" target="_blank" class="btn btn-primary">
-                        Report
-                        </a>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-            <div class="col d-flex align-items-start  my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#ag"><i class="fa-solid fa-seedling"></i>&emsp;Computational Agroecology</h3>
-                    <div id="ag" class="collapse mx-3 my-2"> 
-                        <p>The current state of modern agriculture relies on monocultures, where a singular crop is grown in a field. This practice requires massive land clearing and destroys the local biosystems. The alternative solution is to grow multiple crops in the same field, known as polycultures. This method is more sustainable and leverages natural symbiotic relationships to increase crop yield. Yet testing which crops are optimal to grow within the same field is extremely time consuming. My group developed a reinforcement learning agent that systematically predicts polyculture composition and crop placement. This agent will help farmers incorporate polyculture design in their crops.</p>
-                        <a href="https://github.com/usc-caisplusplus/proj-agroecology" target="_blank" class="btn btn-primary">
-                        Repo
-                        </a>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="col d-flex align-items-start  my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#malaria"><i class="fa-solid fa-mosquito"></i>&emsp;Malaria Prediction with Weather Features</h3>
-                    <div id="malaria" class="collapse mx-3 my-2"> 
-                        <p>The mosquitos vectors for malaria rely on shallow puddles of water to breed. Hence, weather factors including humidity, precipitation, and temperature, are highly associated with malaria outbreaks. While outbreak surveillance records may not be retained, weather data is consistently recorded and extremely abundant. We developed a model that utilizes climate and outbreak data to predict future outbreaks. Additionally, this model is transferrable to other regions with sparser outbreak data.</p>
-                        <a href="docs/projectx_cais_final.pdf" class="btn btn-primary">
-                            UoT Project X Submission
-                        </a>
-                        <a href="https://github.com/shannonmb144/projectx2021" target="_blank" class="btn btn-primary">
-                            Repo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col d-flex align-items-start  my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#liftover"><i class="fa-solid fa-dna"></i>&emsp;Triple Liftover</h3>
-                    <div id="liftover" class="collapse mx-3 my-2">
-                        <p>Because the human genome has multiple iterations, the Liftover program is a critical tool to update genetic data to the most current version of the human genome. However, Liftover is unable to correctly detect palindromic single nucleotide variants (SNVs), which destabilizes the surrounding region. Our method, Triple Liftover, predicts and corrects SNVs located in inverted regions using a heuristic-based approach. Overall, my work focused on structuring the program  so the design was flexible and user friendly.</p>
-                        <a href="https://github.com/GraceSheng/triple-liftOver" target="_blank" class="btn btn-primary">
-                        Repo
-                        </a>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S2666247722000768?via%3Dihub" target="_blank" class="btn btn-primary">
-                            Paper
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="col d-flex align-items-start my-2 mx-4">
-                <div>
-                    <h3 data-bs-toggle="collapse" data-bs-target="#helminth"><i class="fa-solid fa-worm"></i>&emsp;Helminth Immunology</h3>
-                    <div id="helminth" class="collapse mx-3 my-2">
-                        <p>Intestinal parasitic worm (helminth) infection is one of the leading causes of morbidity in undeveloped countries yet the immune mechanisms of worm expulsion are not well understood. Single Cell RNA-Sequencing (scRNA-seq) can be used to elucidate the complex pathways within Type II Inflammation, the main immune response to helminth infections. My role focused on processing and analyzing scRNA-seq data to uncover how gene regulation of CRTH2 is related to positive worm outcomes in mice models.  </p>
-                        <a href="https://doi.org/10.1084/jem.20202178" target="_blank" class="btn btn-primary">
-                            Paper
-                        </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-        <!--</div>-->
-        <div class="container-sm" id="appsum">
-
+        <div class="container-sm mt-5 mb-4 site-footer" id="appsum">
             <div class="row">
                 <div class="col text-center">
-                    <p> <a href="https://github.com/jlcah5" target="_blank"><i class="fa-brands fa-github-square"></i></a> <a href="https://www.linkedin.com/in/jlcah5/" target="_blanl"><i class="fa-brands fa-linkedin"></i> </a></p>
-                </div>        
+                    <p>
+                        <a href="https://github.com/jlcah5" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/in/jlcah5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                    </p>
+                </div>
             </div>
         </div>
-
-    
-
 
     </body>
 </html>

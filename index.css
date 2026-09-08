@@ -7,24 +7,18 @@ src: url("MavenPro-VariableFont_wght.ttf");
 }
 
 .navbar{
-    /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
-    background-color: #27262E; */
-    color:#555155;
-    font-size:24px;
-}
-.navbar-brand{
-    color:#555155;
-    font-size:30px;
-}
-.navbar-brand:hover{
-    color:  #7c800e;
+    color: #555155;
+    font-size: 18px;
+    background-color: white !important;
+    border-bottom: 1px solid #ddd;
+    box-shadow: none;
 }
 body{
     font-family: Maven;
     background-color: white;
     color: #555155;
-    padding:0;
-
+    padding: 0;
+    padding-top: 50px;
 }
 b{
     color: #7c800e;
@@ -46,6 +40,11 @@ a{
     text-decoration: none;
     color:#555155;
 }
+
+a b:hover{
+    color: #555155;
+}
+
 a:hover{
     color: #7c800e;
 }
@@ -56,6 +55,11 @@ bi {
 h2{
     font-size:30px;
 }
+.site-name {
+    font-size: 2rem;
+    color: #555155;
+    margin-bottom: 0.75rem;
+}
 h3{
     font-size:20px;
     font-weight: normal;
@@ -63,6 +67,68 @@ h3{
 h3:hover{
     color:#7c800e;
     cursor: pointer;
-    
+
 }
 
+.profile-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* News section */
+.news-item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+.news-date {
+    min-width: 72px;
+    color: #999;
+    font-size: 0.85em;
+    padding-top: 3px;
+    flex-shrink: 0;
+}
+
+/* Research page */
+.paper-entry {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.paper-entry:last-of-type {
+    border-bottom: none;
+}
+
+.paper-thumb {
+    width: 150px;
+    min-width: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
+}
+
+.paper-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555155;
+    margin-bottom: 0.25rem;
+}
+
+.paper-citation {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 0.25rem;
+}
+
+.paper-desc {
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
